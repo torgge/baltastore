@@ -39,6 +39,7 @@
           <e p="Entities" t="Include">
             <e p="Customer.cs" t="Include" />
             <e p="Delivery.cs" t="Include" />
+            <e p="EDeliveryStatus.cs" t="Include" />
             <e p="EorderStatus.cs" t="Include" />
             <e p="Order.cs" t="Include" />
             <e p="OrderItem.cs" t="Include" />

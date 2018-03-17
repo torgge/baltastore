@@ -9,13 +9,14 @@ namespace BaltaStore.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            var c = new Customer(
+            var customer = new Customer(
                 "George",
                 "Bonespírito",
                 "12312213",
                 "torgge@gmail.com",
                 "1312312312",
                 "Rua dos Dev, 123");
+            
             
             
         }
