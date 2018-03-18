@@ -20,14 +20,12 @@ namespace BaltaStore.Domain.StoreContent.Entities
         public string Number { get; private set; }
         public DateTime CreateDate { get; private set; }
         public EorderStatus Status { get; private set; }
-
         public IReadOnlyCollection<OrderItem> Items { get; private set; }
-
         public IReadOnlyCollection<OrderItem> Deliveries { get; private set; }
 
         public override string ToString()
         {
-            return $"{Customer.FirstName} {Number}";
+            return $"{Customer.Name.ToString()} {Number}";
         }
 
         public void AddItem(OrderItem orderItem)
