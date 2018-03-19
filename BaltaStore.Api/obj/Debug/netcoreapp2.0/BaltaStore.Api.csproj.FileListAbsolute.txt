@@ -9,3 +9,13 @@ C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaS
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.AssemblyInfo.cs
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.dll
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.pdb
+C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Api.deps.json
+C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Api.runtimeconfig.json
+C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Api.runtimeconfig.dev.json
+C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Api.dll
+C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Api.pdb
+C:\dev\baltastore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.csproj.CoreCompileInputs.cache
+C:\dev\baltastore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.AssemblyInfoInputs.cache
+C:\dev\baltastore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.AssemblyInfo.cs
+C:\dev\baltastore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.dll
+C:\dev\baltastore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.pdb

@@ -177,33 +177,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\torgg\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\torgg\\projetos\\BaltaStore\\BaltaStore.Infra\\BaltaStore.Infra.csproj",
+      "projectUniqueName": "C:\\dev\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj",
       "projectName": "BaltaStore.Infra",
-      "projectPath": "C:\\Users\\torgg\\projetos\\BaltaStore\\BaltaStore.Infra\\BaltaStore.Infra.csproj",
-      "packagesPath": "C:\\Users\\torgg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\torgg\\projetos\\BaltaStore\\BaltaStore.Infra\\obj\\",
+      "projectPath": "C:\\dev\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\baltastore\\BaltaStore.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\torgg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
