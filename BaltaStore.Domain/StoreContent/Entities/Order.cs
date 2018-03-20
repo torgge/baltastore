@@ -32,9 +32,12 @@ namespace BaltaStore.Domain.StoreContent.Entities
             return $"{Customer.Name.ToString()} {Number}";
         }
 
-        public void AddItem(OrderItem item)
+        public void AddItem(Product product, decimal quantity)
         {
-            //Valida Item
+            if (quantity > product.QuantityOnHand)
+                AddNotification("OrderItem", $"Produto {product.Title} não tem {quantity} itens em estoque.");
+
+            var item = new OrderItem(product, quantity);
             _items.Add(item);
         }
 
@@ -47,8 +50,8 @@ namespace BaltaStore.Domain.StoreContent.Entities
         public void Place()
         {
             Number = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8).ToUpper();
-            if(_items.Count == 0)
-                AddNotification("Order","Este pedido não possui Itens");
+            if (_items.Count == 0)
+                AddNotification("Order", "Este pedido não possui Itens");
         }
 
         //Pagar um pedido
