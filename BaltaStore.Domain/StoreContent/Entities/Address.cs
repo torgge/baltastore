@@ -1,6 +1,8 @@
-﻿namespace BaltaStore.Domain.StoreContent.Entities
+﻿using FluentValidator;
+
+namespace BaltaStore.Domain.StoreContent.Entities
 {
-    public class Address
+    public class Address : Notifiable
     {
         public string Street { get; private set; }
         public string Number { get; private set; }

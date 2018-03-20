@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using FluentValidator;
 
 namespace BaltaStore.Domain.StoreContent.Entities
 {
-    public class Order
+    public class Order : Notifiable
     {
         private readonly IList<OrderItem> _items;
         private readonly IList<Delivery> _deliveries;
@@ -46,6 +47,8 @@ namespace BaltaStore.Domain.StoreContent.Entities
         public void Place()
         {
             Number = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8).ToUpper();
+            if(_items.Count == 0)
+                AddNotification("Order","Este pedido não possui Itens");
         }
 
         //Pagar um pedido

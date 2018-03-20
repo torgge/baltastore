@@ -16,17 +16,20 @@ namespace BaltaStore.Tests
                 new Email("torgge@gmail.com"),
                 "1312312312");
 
-            var mouse = new Product("Mouse", "Mouse Óptico", "img.png", 12.50M, 12);
-            var teclado = new Product("Teclado", "Teclado Mecânico", "img.png", 46.54M, 122);
-            var monitor = new Product("Monitor", "Monitor VGA", "img.png", 12.50M, 1);
-
+//            var mouse = new Product("Mouse", "Mouse Óptico", "img.png", 12.50M, 12);
+//            var teclado = new Product("Teclado", "Teclado Mecânico", "img.png", 46.54M, 122);
+//            var monitor = new Product("Monitor", "Monitor VGA", "img.png", 12.50M, 1);
+//            var oi = new OrderItem(monitor, 0);
+            
             var order = new Order(customer);
-            order.AddItem(new OrderItem(mouse, 20));
-            order.AddItem(new OrderItem(teclado, 10));
-            order.AddItem(new OrderItem(monitor, 40));
+//            order.AddItem(new OrderItem(mouse, 20));
+//            order.AddItem(new OrderItem(teclado, 10));
+//            order.AddItem(new OrderItem(monitor, 40));
             
             //Realizei o Pedido.
             order.Place();
+
+            var valid = order.Valid;
             
             order.Pay();
             

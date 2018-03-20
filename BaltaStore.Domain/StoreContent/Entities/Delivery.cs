@@ -1,8 +1,9 @@
 ﻿using System;
+using FluentValidator;
 
 namespace BaltaStore.Domain.StoreContent.Entities
 {
-    public class Delivery
+    public class Delivery : Notifiable
     {
         public Delivery(DateTime estimateDeliveryDate)
         {
