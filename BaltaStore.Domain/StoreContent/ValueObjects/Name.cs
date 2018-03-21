@@ -13,14 +13,14 @@ namespace BaltaStore.Domain.StoreContent.ValueObjects
             FirsName = firsName;
             LastName = lastName;
 
-//            AddNotification(
-//                new ValidationContract()
-//                    .Requires()
-//                    .HasMinLen(FirsName, 3, "FirstName", "O nome deve conter pelo menos 3 caracteres")
-//                    .HasMaxLen(FirsName, 40, "FirstName", "O nome deve conter pelo menos 3 caracteres")
-//                    .HasMinLen(LastName, 3, "LastName", "O sobrenome deve conter pelo menos 3 caracteres")
-//                    .HasMaxLen(LastName, 40, "LastName", "O sobrenome deve conter pelo menos 3 caracteres").ToString()
-//            );
+            AddNotifications(
+                    new ValidationContract()
+                    .Requires()
+                    .HasMinLen(FirsName, 3, "FirstName", "O nome deve conter pelo menos 3 caracteres")
+                    .HasMaxLen(FirsName, 40, "FirstName", "O nome deve conter pelo menos 3 caracteres")
+                    .HasMinLen(LastName, 3, "LastName", "O sobrenome deve conter pelo menos 3 caracteres")
+                    .HasMaxLen(LastName, 40, "LastName", "O sobrenome deve conter pelo menos 3 caracteres")
+                );
         }
 
         public override string ToString()
