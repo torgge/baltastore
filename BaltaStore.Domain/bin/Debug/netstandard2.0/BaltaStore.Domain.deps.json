@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "5335f294dadcd7c0847d667ccb3730f548316e82"
+    "signature": "c29f067539626e6ca22ae7f71053c31b95784ad6"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,14 +9,14 @@
     ".NETStandard,Version=v2.0/": {
       "BaltaStore.Domain/1.0.0": {
         "dependencies": {
-          "FluentValidator": "2.0.4",
+          "FluentValidator": "2.0.2",
           "NETStandard.Library": "2.0.1"
         },
         "runtime": {
           "BaltaStore.Domain.dll": {}
         }
       },
-      "FluentValidator/2.0.4": {
+      "FluentValidator/2.0.2": {
         "dependencies": {
           "NETStandard.Library": "2.0.1"
         },
@@ -38,12 +38,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FluentValidator/2.0.4": {
+    "FluentValidator/2.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-px1HWHYBD20PuCUgz/mEl/QcBsikW5nbdtR5whllwMIyJ4FJs03nGXe5ocHEre/x3CX72hJBnX7bteqkZwlcfA==",
-      "path": "fluentvalidator/2.0.4",
-      "hashPath": "fluentvalidator.2.0.4.nupkg.sha512"
+      "sha512": "sha512-+jPy82KgA80/SjmesLUCQsBB+GWbffGYMeGUMizLWc87hQkBPnyrysfoa/Hiq0QciGEeFD1PokPwLafnNDnQ/Q==",
+      "path": "fluentvalidator/2.0.2",
+      "hashPath": "fluentvalidator.2.0.2.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
