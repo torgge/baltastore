@@ -1,6 +1,6 @@
 ﻿namespace BaltaStore.Domain.StoreContent.Entities
 {
-    public enum EorderStatus
+    public enum EOrderStatus
     {
         Created = 1,
         Paid = 2,

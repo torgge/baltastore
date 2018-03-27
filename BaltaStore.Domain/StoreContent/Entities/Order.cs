@@ -15,7 +15,7 @@ namespace BaltaStore.Domain.StoreContent.Entities
         {
             Customer = customer;
             CreateDate = DateTime.Now;
-            Status = EorderStatus.Created;
+            Status = EOrderStatus.Created;
             _items = new List<OrderItem>();
             _deliveries = new List<Delivery>();
         }
@@ -23,7 +23,7 @@ namespace BaltaStore.Domain.StoreContent.Entities
         public Customer Customer { get; private set; }
         public string Number { get; private set; }
         public DateTime CreateDate { get; private set; }
-        public EorderStatus Status { get; private set; }
+        public EOrderStatus Status { get; private set; }
         public IReadOnlyCollection<OrderItem> Items => _items.ToArray();
         public IReadOnlyCollection<Delivery> Deliveries => _deliveries.ToArray();
 
@@ -57,19 +57,20 @@ namespace BaltaStore.Domain.StoreContent.Entities
         //Pagar um pedido
         public void Pay()
         {
-            Status = EorderStatus.Paid;
+            Status = EOrderStatus.Paid;
         }
 
         //Enviar um pedido
         public void Ship()
         {
             //A cada 5 produtos é uma entrega
+            var deliveries = new List<Delivery>();
             var count = 1;
             foreach (var item in _items)
             {
                 if (count == 5)
                 {
-                    count = 0;
+                    count = 1;
                     _deliveries.Add(new Delivery(DateTime.Now.AddDays(5)));
                 }
 
@@ -77,15 +78,15 @@ namespace BaltaStore.Domain.StoreContent.Entities
             }
 
             //Envia todas as entregas
-            _deliveries.ToList().ForEach(x => x.Ship());
+            deliveries.ForEach(x => x.Ship());
             //Adiciona todas as entregas ao pedido
-            _deliveries.ToList().ForEach(x => _deliveries.Add(x));
+            deliveries.ToList().ForEach(x => _deliveries.Add(x));
         }
 
         //Cancelar um pedido
         public void Cancel()
         {
-            Status = EorderStatus.Canceled;
+            Status = EOrderStatus.Canceled;
             _deliveries.ToList().ForEach(x => x.Cancel());
         }
     }

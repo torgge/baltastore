@@ -80,6 +80,9 @@
       <e p="BaltaStore.Tests" t="IncludeRecursive">
         <e p="BaltaStore.Tests.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Entities" t="Include">
+          <e p="OrderTests.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.0" t="Include">
