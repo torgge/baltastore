@@ -1,7 +1,8 @@
 ﻿using System;
+using BaltaStore.Domain.StoreContext.Enums;
 using FluentValidator;
 
-namespace BaltaStore.Domain.StoreContent.Entities
+namespace BaltaStore.Domain.StoreContext.Entities
 {
     public class Delivery : Notifiable
     {

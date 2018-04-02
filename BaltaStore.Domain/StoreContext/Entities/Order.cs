@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
+using BaltaStore.Domain.StoreContext.Enums;
 using FluentValidator;
 
-namespace BaltaStore.Domain.StoreContent.Entities
+namespace BaltaStore.Domain.StoreContext.Entities
 {
     public class Order : Notifiable
     {

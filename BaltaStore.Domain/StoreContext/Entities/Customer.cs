@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using BaltaStore.Domain.StoreContent.ValueObjects;
+using BaltaStore.Domain.StoreContext.ValueObjects;
 using FluentValidator;
 
-namespace BaltaStore.Domain.StoreContent.Entities
+namespace BaltaStore.Domain.StoreContext.Entities
 {
     //SOLID
 

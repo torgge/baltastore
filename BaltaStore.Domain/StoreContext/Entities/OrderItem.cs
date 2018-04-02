@@ -1,7 +1,6 @@
-﻿using System.Net.Security;
-using FluentValidator;
+﻿using FluentValidator;
 
-namespace BaltaStore.Domain.StoreContent.Entities
+namespace BaltaStore.Domain.StoreContext.Entities
 {
     public class OrderItem : Notifiable
 

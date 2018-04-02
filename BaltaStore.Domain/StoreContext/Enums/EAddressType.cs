@@ -1,4 +1,4 @@
-﻿namespace BaltaStore.Domain.StoreContent.Entities
+﻿namespace BaltaStore.Domain.StoreContext.Enums
 {
     public enum EAddressType
     {

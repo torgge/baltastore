@@ -1,6 +1,6 @@
 ﻿using FluentValidator;
 
-namespace BaltaStore.Domain.StoreContent.Entities
+namespace BaltaStore.Domain.StoreContext.Entities
 {
     public class Product : Notifiable
     {

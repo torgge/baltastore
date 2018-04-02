@@ -1,4 +1,4 @@
-﻿using BaltaStore.Domain.StoreContent.ValueObjects;
+﻿using BaltaStore.Domain.StoreContext.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BaltaStore.Tests.ValueObjects
