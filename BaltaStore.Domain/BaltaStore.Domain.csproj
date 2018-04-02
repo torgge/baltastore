@@ -3,17 +3,39 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="FinancialContent\" />
-    <Folder Include="InventoryContent\" />
-    <Folder Include="StoreContent\" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Remove="Class1.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FluentValidator" Version="2.0.2" />
   </ItemGroup>
-    <ItemGroup>
-        <ProjectReference Include="..\BaltaStore.Shared\BaltaStore.Shared.csproj"/>
-    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaltaStore.Shared\BaltaStore.Shared.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="StoreContent\**"/>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="StoreContent\**"/>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="StoreContent\**"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="InventoryContent\**"/>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="InventoryContent\**"/>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="InventoryContent\**"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="FinancialContent\**"/>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="FinancialContent\**"/>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="FinancialContent\**"/>
+  </ItemGroup>
 </Project>
