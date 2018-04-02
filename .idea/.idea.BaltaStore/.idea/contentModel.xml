@@ -22,8 +22,8 @@
       <e p="BaltaStore.Domain" t="IncludeRecursive">
         <e p="BaltaStore.Domain.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="FinancialContext" t="Include" />
-        <e p="InventoryContext" t="Include" />
+        <e p="FinancialContent" t="Include" />
+        <e p="InventoryContent" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
@@ -31,12 +31,18 @@
             </e>
           </e>
         </e>
+        <e p="StoreContent" t="Include" />
         <e p="StoreContext" t="Include">
           <e p="Commands" t="Include">
             <e p="CustomerCommands" t="Include">
               <e p="Inputs" t="Include">
                 <e p="AddAddressCommand.cs" t="Include" />
                 <e p="CreateCustomerCommand.cs" t="Include" />
+              </e>
+            </e>
+            <e p="OrderCommands" t="Include">
+              <e p="Inputs" t="Include">
+                <e p="PlaceOrderCommand.cs" t="Include" />
               </e>
             </e>
           </e>
