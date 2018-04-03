@@ -9,33 +9,33 @@
     <PackageReference Include="FluentValidator" Version="2.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BaltaStore.Shared\BaltaStore.Shared.csproj"/>
+      <ProjectReference Include="..\BaltaStore.Shared\BaltaStore.Shared.csproj"/>
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="StoreContent\**"/>
+      <Compile Remove="StoreContent\**"/>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Remove="StoreContent\**"/>
+      <EmbeddedResource Remove="StoreContent\**"/>
   </ItemGroup>
   <ItemGroup>
-    <None Remove="StoreContent\**"/>
+      <None Remove="StoreContent\**"/>
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="InventoryContent\**"/>
+      <Compile Remove="InventoryContent\**"/>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Remove="InventoryContent\**"/>
+      <EmbeddedResource Remove="InventoryContent\**"/>
   </ItemGroup>
   <ItemGroup>
-    <None Remove="InventoryContent\**"/>
+      <None Remove="InventoryContent\**"/>
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="FinancialContent\**"/>
+      <Compile Remove="FinancialContent\**"/>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Remove="FinancialContent\**"/>
+      <EmbeddedResource Remove="FinancialContent\**"/>
   </ItemGroup>
   <ItemGroup>
-    <None Remove="FinancialContent\**"/>
+      <None Remove="FinancialContent\**"/>
   </ItemGroup>
 </Project>

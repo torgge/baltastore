@@ -36,6 +36,9 @@
                 <e p="AddAddressCommand.cs" t="Include" />
                 <e p="CreateCustomerCommand.cs" t="Include" />
               </e>
+              <e p="Outputs" t="Include">
+                <e p="CreateCustomerCommandResult.cs" t="Include" />
+              </e>
             </e>
             <e p="OrderCommands" t="Include">
               <e p="Inputs" t="Include">
@@ -55,6 +58,9 @@
             <e p="EAddressType.cs" t="Include" />
             <e p="EDeliveryStatus.cs" t="Include" />
             <e p="EorderStatus.cs" t="Include" />
+          </e>
+          <e p="Handlers" t="Include">
+            <e p="CustomerHandler.cs" t="Include" />
           </e>
           <e p="ValueObjects" t="Include">
             <e p="Document.cs" t="Include" />
