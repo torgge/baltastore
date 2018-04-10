@@ -62,6 +62,12 @@
           <e p="Handlers" t="Include">
             <e p="CustomerHandler.cs" t="Include" />
           </e>
+          <e p="Repositories" t="Include">
+            <e p="ICustomeRepository.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="IEmailService.cs" t="Include" />
+          </e>
           <e p="ValueObjects" t="Include">
             <e p="Document.cs" t="Include" />
             <e p="Email.cs" t="Include" />
@@ -89,6 +95,9 @@
           <e p="ICommandHandler.cs" t="Include" />
           <e p="ICommandResult.cs" t="Include" />
         </e>
+        <e p="Entities" t="Include">
+          <e p="Entity.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
@@ -106,6 +115,13 @@
         </e>
         <e p="Entities" t="Include">
           <e p="OrderTests.cs" t="Include" />
+        </e>
+        <e p="Fakes" t="Include">
+          <e p="FakeCustomerRepository.cs" t="Include" />
+          <e p="FakeEmailService.cs" t="Include" />
+        </e>
+        <e p="Handlers" t="Include">
+          <e p="CustomerHandlerTests.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
