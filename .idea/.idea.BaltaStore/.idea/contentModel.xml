@@ -86,6 +86,13 @@
             </e>
           </e>
         </e>
+        <e p="Scripts" t="Include" />
+        <e p="StoreContext" t="Include">
+          <e p="DataContexts" t="Include">
+            <e p="BaltaDataContext.cs" t="Include" />
+          </e>
+          <e p="Repositories" t="Include" />
+        </e>
       </e>
       <e p="BaltaStore.Shared" t="IncludeRecursive">
         <e p="BaltaStore.Shared.csproj" t="IncludeRecursive" />
@@ -105,6 +112,7 @@
             </e>
           </e>
         </e>
+        <e p="Settings.cs" t="Include" />
       </e>
       <e p="BaltaStore.sln" t="IncludeFlat" />
       <e p="BaltaStore.Tests" t="IncludeRecursive">
