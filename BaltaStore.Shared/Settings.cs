@@ -2,6 +2,6 @@
 {
     public static class Settings
     {
-        public static string ConnectionString = @"Server=.\sqlexpress;Database=baltastore;User ID=SA;Password=ervamate@00;";
+        public static string ConnectionString = @"Server=.\sqlexpress;Database=baltastore;User ID=sa;Password=ervamate@00;";
     }
 }

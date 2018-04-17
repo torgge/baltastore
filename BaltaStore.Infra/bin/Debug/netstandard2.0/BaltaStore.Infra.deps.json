@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "2beee299f293639f17dd874efae8b3fce8dfc326"
+    "signature": "677d44b45078e9f204db0d447716282a0719c772"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "BaltaStore.Infra/1.0.0": {
         "dependencies": {
+          "BaltaStore.Domain": "1.0.0",
           "BaltaStore.Shared": "1.0.0",
           "Dapper": "1.50.4",
           "NETStandard.Library": "2.0.1"
@@ -25,6 +26,14 @@
         },
         "runtime": {
           "lib/netstandard2.0/Dapper.dll": {}
+        }
+      },
+      "FluentValidator/2.0.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -205,6 +214,15 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "BaltaStore.Domain/1.0.0": {
+        "dependencies": {
+          "BaltaStore.Shared": "1.0.0",
+          "FluentValidator": "2.0.2"
+        },
+        "runtime": {
+          "BaltaStore.Domain.dll": {}
+        }
+      },
       "BaltaStore.Shared/1.0.0": {
         "runtime": {
           "BaltaStore.Shared.dll": {}
@@ -224,6 +242,13 @@
       "sha512": "sha512-t5DMz+1aEkBcyCgkj+6hJHNsUq3k/d67lVMTNzICEhVjPUI3Gt2kgotSK8S4SpziIbFPphnOEn8M6Q75ED5hRQ==",
       "path": "dapper/1.50.4",
       "hashPath": "dapper.1.50.4.nupkg.sha512"
+    },
+    "FluentValidator/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+jPy82KgA80/SjmesLUCQsBB+GWbffGYMeGUMizLWc87hQkBPnyrysfoa/Hiq0QciGEeFD1PokPwLafnNDnQ/Q==",
+      "path": "fluentvalidator/2.0.2",
+      "hashPath": "fluentvalidator.2.0.2.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -413,6 +438,11 @@
       "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "BaltaStore.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "BaltaStore.Shared/1.0.0": {
       "type": "project",
