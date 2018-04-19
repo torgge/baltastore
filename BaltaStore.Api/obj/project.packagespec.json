@@ -14,7 +14,11 @@
     ],
     "frameworks": {
       "netcoreapp2.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj": {
+            "projectPath": "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -26,6 +30,10 @@
   "frameworks": {
     "netcoreapp2.0": {
       "dependencies": {
+        "FluentValidator": {
+          "target": "Package",
+          "version": "[2.0.2, )"
+        },
         "Microsoft.AspNetCore": {
           "target": "Package",
           "version": "[2.0.2, )"

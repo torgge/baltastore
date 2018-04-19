@@ -6,7 +6,14 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
-      <PackageReference Include="Microsoft.AspNetCore" Version="2.0.2"/>
+    <PackageReference Include="FluentValidator" Version="2.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaltaStore.Domain\BaltaStore.Domain.csproj">
+      <Project>{5A2E0967-AECF-4CC4-8C28-73ED070AA965}</Project>
+      <Name>BaltaStore.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

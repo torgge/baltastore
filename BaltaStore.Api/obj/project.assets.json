@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "FluentValidator/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -4746,10 +4758,44 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "BaltaStore.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "BaltaStore.Shared": "1.0.0",
+          "FluentValidator": "2.0.2"
+        },
+        "compile": {
+          "bin/placeholder/BaltaStore.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BaltaStore.Domain.dll": {}
+        }
+      },
+      "BaltaStore.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/BaltaStore.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BaltaStore.Shared.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidator/2.0.2": {
+      "sha512": "+jPy82KgA80/SjmesLUCQsBB+GWbffGYMeGUMizLWc87hQkBPnyrysfoa/Hiq0QciGEeFD1PokPwLafnNDnQ/Q==",
+      "type": "package",
+      "path": "fluentvalidator/2.0.2",
+      "files": [
+        "fluentvalidator.2.0.2.nupkg.sha512",
+        "fluentvalidator.nuspec",
+        "lib/netstandard1.3/FluentValidator.dll"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -12526,10 +12572,22 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "BaltaStore.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BaltaStore.Domain/BaltaStore.Domain.csproj",
+      "msbuildProject": "../BaltaStore.Domain/BaltaStore.Domain.csproj"
+    },
+    "BaltaStore.Shared/1.0.0": {
+      "type": "project",
+      "path": "../BaltaStore.Shared/BaltaStore.Shared.csproj",
+      "msbuildProject": "../BaltaStore.Shared/BaltaStore.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "BaltaStore.Domain >= 1.0.0",
+      "FluentValidator >= 2.0.2",
       "Microsoft.AspNetCore >= 2.0.2",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0"
@@ -12562,7 +12620,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj": {
+              "projectPath": "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -12574,6 +12636,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "FluentValidator": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
           "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "[2.0.2, )"
