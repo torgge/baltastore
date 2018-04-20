@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using BaltaStore.Domain.StoreContext.Commands.CustomerCommands.Inputs;
 using BaltaStore.Domain.StoreContext.Entities;
+using BaltaStore.Domain.StoreContext.Queries;
+using BaltaStore.Domain.StoreContext.Repositories;
 using BaltaStore.Domain.StoreContext.ValueObjects;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,18 +11,18 @@ namespace BaltaStore.Api.Controllers
 {
     public class CustomerController : Controller
     {
+        private readonly ICustomeRepository _repository;
+
+        public CustomerController(ICustomeRepository repository)
+        {
+            _repository = repository;
+        }
+
         [HttpGet]
         [Route("customers")]
-        public List<Customer> Get()
+        public IEnumerable<ListCustomerQueryResult> Get()
         {
-            var name = new Name("André", "Baltieri");
-            var document = new Document("46718115533");
-            var email = new Email("hello@balta.io");
-            var customer = new Customer(name, document, email, "551999876542");
-            var customers = new List<Customer>();
-            customers.Add(customer);
-            
-            return customers;
+            return _repository.Get();
         }
         
         [HttpPost]
@@ -56,40 +58,16 @@ namespace BaltaStore.Api.Controllers
         
         [HttpGet]
         [Route("customers/{id}")]
-        public Customer GetById(Guid id)
+        public GetCustomerQueryResult GetById(Guid id)
         {
-            var name = new Name("André", "Baltieri");
-            var document = new Document("46718115533");
-            var email = new Email("hello@balta.io");
-            var customer = new Customer(name, document, email, "551999876542");
-
-            return customer;
+            return _repository.GetById(id);
         }
         
         [HttpGet]
-        [Route("orders")]
-        public List<Order> GetOrders()
+        [Route("orders/{id}/orders")]
+        public IEnumerable<ListCustomerOrderQueryResult> GetOrders(Guid id)
         {
-            var name = new Name("André", "Baltieri");
-            var document = new Document("46718115533");
-            var email = new Email("hello@balta.io");
-            var customer = new Customer(name, document, email, "551999876542");
-            var order = new Order(customer);
-            
-            var mouse = new Product("Mouse Gamer", "Mouse Gamer", "mouse.jpg", 100M, 10);
-            var keyboard = new Product("Teclado Gamer", "Teclado Gamer", "Teclado.jpg", 100M, 10);
-            var chair = new Product("Cadeira Gamer", "Cadeira Gamer", "Cadeira.jpg", 100M, 10);
-            var monitor = new Product("Monitor Gamer", "Monitor Gamer", "Monitor.jpg", 100M, 10);
-            
-            order.AddItem(mouse, 4);
-            order.AddItem(keyboard, 2);
-            order.AddItem(chair, 4);
-            order.AddItem(monitor, 5);
-
-            var orders = new List<Order>();
-            orders.Add(order);
-
-            return orders;
+            return _repository.GetOrders(id);
         }
         
     }

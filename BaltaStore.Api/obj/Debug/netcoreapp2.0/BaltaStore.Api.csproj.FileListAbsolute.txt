@@ -23,3 +23,5 @@ C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Domain.dll
 C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Shared.dll
 C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Domain.pdb
 C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Shared.pdb
+C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Infra.dll
+C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Infra.pdb

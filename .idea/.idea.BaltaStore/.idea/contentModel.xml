@@ -68,6 +68,9 @@
           </e>
           <e p="Queries" t="Include">
             <e p="CustomerOrdersCountResult.cs" t="Include" />
+            <e p="GetCustomerQueryResult.cs" t="Include" />
+            <e p="ListCustomerOrderQueryResult.cs" t="Include" />
+            <e p="ListCustomerQueryResult.cs" t="Include" />
           </e>
           <e p="Repositories" t="Include">
             <e p="ICustomeRepository.cs" t="Include" />

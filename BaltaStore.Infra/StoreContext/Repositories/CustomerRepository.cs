@@ -1,4 +1,6 @@
-﻿using BaltaStore.Domain.StoreContext.Entities;
+﻿using System;
+using System.Collections.Generic;
+using BaltaStore.Domain.StoreContext.Entities;
 using BaltaStore.Domain.StoreContext.Repositories;
 using BaltaStore.Infra.StoreContext.DataContexts;
 using Dapper;
@@ -83,6 +85,35 @@ namespace BaltaStore.Infra.StoreContext.Repositories
                         new {Document = document},
                         commandType: CommandType.StoredProcedure)
                     .FirstOrDefault();
+        }
+
+        public IEnumerable<ListCustomerQueryResult> Get()
+        {
+            return _context
+                    .Connection
+                    .Query<ListCustomerQueryResult>(
+                        "SELECT [Id], CONCAT([FIRSTNAME],' ',[LASTNAME]) AS [NAME], [DOCUMENT], [EMAIL] FROM [CUSTOMER]",
+                        new { });
+                   
+        }
+
+        public GetCustomerQueryResult GetById(Guid id)
+        {
+            return _context
+                .Connection
+                .Query<GetCustomerQueryResult>(
+                    "SELECT [Id], CONCAT([FIRSTNAME],' ',[LASTNAME]) AS [NAME] , [DOCUMENT], [EMAIL] FROM [CUSTOMER] WHERE [Id]=@id", new { Id = id })
+                .FirstOrDefault();
+        }
+
+        public IEnumerable<ListCustomerOrderQueryResult> GetOrders(Guid id)
+        {
+            return _context
+                .Connection
+                .Query<ListCustomerOrderQueryResult>(
+                    "SELECT [Id], CONCAT([FIRSTNAME],' ',[LASTNAME]) AS [NAME] , [DOCUMENT], [EMAIL] FROM [CUSTOMER] WHERE [Id]=@id",
+                    new {Id = id});
+
         }
     }
 }
