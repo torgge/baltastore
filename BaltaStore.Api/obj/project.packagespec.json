@@ -17,6 +17,9 @@
         "projectReferences": {
           "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj": {
             "projectPath": "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj"
+          },
+          "C:\\dev\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj": {
+            "projectPath": "C:\\dev\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj"
           }
         }
       }

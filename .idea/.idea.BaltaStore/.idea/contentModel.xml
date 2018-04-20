@@ -105,6 +105,9 @@
           <e p="DataContexts" t="Include">
             <e p="BaltaDataContext.cs" t="Include" />
           </e>
+          <e p="EmailService" t="Include">
+            <e p="EmailService.cs" t="Include" />
+          </e>
           <e p="Repositories" t="Include">
             <e p="CustomerRepository.cs" t="Include" />
           </e>
