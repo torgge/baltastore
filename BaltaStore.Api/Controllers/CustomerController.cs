@@ -24,14 +24,14 @@ namespace BaltaStore.Api.Controllers
         }
 
         [HttpGet]
-        [Route("customers")]
+        [Route("v1/customers")]
         public IEnumerable<ListCustomerQueryResult> Get()
         {
             return _repository.Get();
         }
         
         [HttpPost]
-        [Route("customers")]
+        [Route("v1/customers")]
         public object Post([FromBody] CreateCustomerCommand command)
         {
             var result = (CreateCustomerCommandResult)_customerHandler.Handle(command);
@@ -41,34 +41,29 @@ namespace BaltaStore.Api.Controllers
             return result;
         }
         
-        [HttpPut]
-        [Route("customers/{id}")]
-        public Customer Put([FromBody] CreateCustomerCommand command)
-        {
-            var name = new Name(command.FirstName, command.LastName);
-            var document = new Document(command.Document);
-            var email = new Email(command.Email);
-            var customer = new Customer(name, document, email, command.Phone);
-
-            return customer;
-        }
-        
         [HttpDelete]
-        [Route("customers/{id}")]
+        [Route("v1/customers/{id}")]
         public object Delete()
         {
             return new {message = "Cliente removido com sucesso"};
         }
         
         [HttpGet]
-        [Route("customers/{id}")]
+        [Route("v1/customers/{id}")]
         public GetCustomerQueryResult GetById(Guid id)
         {
             return _repository.GetById(id);
         }
         
         [HttpGet]
-        [Route("orders/{id}/orders")]
+        [Route("v2/customers/{id}")]
+        public GetCustomerQueryResult GetByDocument(Guid document)
+        {
+            return _repository.GetById(document);
+        }
+        
+        [HttpGet]
+        [Route("v1/orders/{id}/orders")]
         public IEnumerable<ListCustomerOrderQueryResult> GetOrders(Guid id)
         {
             return _repository.GetOrders(id);
