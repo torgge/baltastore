@@ -41,6 +41,7 @@
                 <e p="CreateCustomerCommand.cs" t="Include" />
               </e>
               <e p="Outputs" t="Include">
+                <e p="CommandResult.cs" t="Include" />
                 <e p="CreateCustomerCommandResult.cs" t="Include" />
               </e>
             </e>
