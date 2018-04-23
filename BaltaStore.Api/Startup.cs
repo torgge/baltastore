@@ -1,4 +1,5 @@
-﻿using BaltaStore.Domain.StoreContext.Repositories;
+﻿using BaltaStore.Domain.StoreContext.Handlers;
+using BaltaStore.Domain.StoreContext.Repositories;
 using BaltaStore.Domain.StoreContext.Services;
 using BaltaStore.Infra.StoreContext.DataContexts;
 using BaltaStore.Infra.StoreContext.EmailService;
@@ -20,6 +21,7 @@ namespace BaltaStore.Api
             services.AddScoped<BaltaDataContext, BaltaDataContext>();
             services.AddTransient<ICustomeRepository, CustomerRepository>();
             services.AddTransient<IEmailService, EmailService>();
+            services.AddTransient<CustomerHandler, CustomerHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
