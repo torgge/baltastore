@@ -12646,6 +12646,7 @@
       "FluentValidator >= 2.0.2",
       "Microsoft.AspNetCore >= 2.0.2",
       "Microsoft.AspNetCore.All >= 2.0.5",
+      "Microsoft.AspNetCore.ResponseCompression >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -12706,6 +12707,10 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.5, )"
+          },
+          "Microsoft.AspNetCore.ResponseCompression": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
