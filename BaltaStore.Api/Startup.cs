@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using BaltaStore.Domain.StoreContext.Handlers;
 using BaltaStore.Domain.StoreContext.Repositories;
@@ -6,9 +7,11 @@ using BaltaStore.Domain.StoreContext.Services;
 using BaltaStore.Infra.StoreContext.DataContexts;
 using BaltaStore.Infra.StoreContext.EmailService;
 using BaltaStore.Infra.StoreContext.Repositories;
+using BaltaStore.Shared;
 using Elmah.Io.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -16,10 +19,16 @@ namespace BaltaStore.Api
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public static IConfiguration Configuration { get; set; }
+        
         public void ConfigureServices(IServiceCollection services)
         {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json");
+
+            Configuration = builder.Build();
+            
             services.AddMvc();
 
             services.AddResponseCompression();
@@ -33,6 +42,8 @@ namespace BaltaStore.Api
             {
                 x.SwaggerDoc("v1", new Info {Title = "Balta Store", Version = "v1"});
             });
+            
+            Settings.ConnectionString = $"{Configuration["connectionString"]}";
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,7 +53,7 @@ namespace BaltaStore.Api
                 app.UseDeveloperExceptionPage();
 
             app.UseMvc();
-            
+
             app.UseResponseCompression();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
