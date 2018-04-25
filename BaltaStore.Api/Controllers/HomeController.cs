@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BaltaStore.Api.Controllers
 {
@@ -11,25 +12,13 @@ namespace BaltaStore.Api.Controllers
             return new {version = "version 0.0.0.1"};
         }
         
-        [HttpPost]
-        [Route("")]
-        public object Post()
+        [HttpGet]
+        [Route("error")]
+        public string Error()
         {
-            return new {version = "version 0.0.0.1"};
+            throw new Exception("Algum erro ocorreu.");
         }
         
-        [HttpPut]
-        [Route("")]
-        public object Put()
-        {
-            return new {version = "version 0.0.0.1"};
-        }
         
-        [HttpDelete]
-        [Route("")]
-        public object Delete()
-        {
-            return new {version = "version 0.0.0.1"};
-        }
     }
 }

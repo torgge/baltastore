@@ -33,6 +33,10 @@
   "frameworks": {
     "netcoreapp2.0": {
       "dependencies": {
+        "Elmah.Io.AspNetCore": {
+          "target": "Package",
+          "version": "[3.5.54, )"
+        },
         "FluentValidator": {
           "target": "Package",
           "version": "[2.0.2, )"

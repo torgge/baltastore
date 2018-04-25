@@ -1,10 +1,12 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using BaltaStore.Domain.StoreContext.Handlers;
 using BaltaStore.Domain.StoreContext.Repositories;
 using BaltaStore.Domain.StoreContext.Services;
 using BaltaStore.Infra.StoreContext.DataContexts;
 using BaltaStore.Infra.StoreContext.EmailService;
 using BaltaStore.Infra.StoreContext.Repositories;
+using Elmah.Io.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -47,6 +49,8 @@ namespace BaltaStore.Api
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Balta Store - V1");
             });
+
+            app.UseElmahIo("7bac22ef58794468ad26b5e1fb8675f3", new Guid("ca58bbba-16cd-4e70-8c07-2eb365b80d14"));
         }
     }
 }
