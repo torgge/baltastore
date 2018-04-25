@@ -388,6 +388,9 @@
       "BaltaStore.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.2"
+        },
         "compile": {
           "bin/placeholder/BaltaStore.Shared.dll": {}
         },
@@ -1854,23 +1857,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\torgg\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj",
       "projectName": "BaltaStore.Infra",
-      "projectPath": "C:\\dev\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\baltastore\\BaltaStore.Infra\\obj\\",
+      "projectPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj",
+      "packagesPath": "C:\\Users\\torgg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\torgg\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -1881,11 +1884,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj": {
-              "projectPath": "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj"
+            "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj": {
+              "projectPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj"
             },
-            "C:\\dev\\baltastore\\BaltaStore.Shared\\BaltaStore.Shared.csproj": {
-              "projectPath": "C:\\dev\\baltastore\\BaltaStore.Shared\\BaltaStore.Shared.csproj"
+            "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Shared\\BaltaStore.Shared.csproj": {
+              "projectPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Shared\\BaltaStore.Shared.csproj"
             }
           }
         }

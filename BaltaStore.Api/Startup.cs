@@ -1,4 +1,5 @@
-﻿using BaltaStore.Domain.StoreContext.Handlers;
+﻿using System.Security.Cryptography.X509Certificates;
+using BaltaStore.Domain.StoreContext.Handlers;
 using BaltaStore.Domain.StoreContext.Repositories;
 using BaltaStore.Domain.StoreContext.Services;
 using BaltaStore.Infra.StoreContext.DataContexts;
@@ -7,6 +8,7 @@ using BaltaStore.Infra.StoreContext.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace BaltaStore.Api
 {
@@ -24,6 +26,11 @@ namespace BaltaStore.Api
             services.AddTransient<ICustomeRepository, CustomerRepository>();
             services.AddTransient<IEmailService, EmailService>();
             services.AddTransient<CustomerHandler, CustomerHandler>();
+
+            services.AddSwaggerGen(x =>
+            {
+                x.SwaggerDoc("v1", new Info {Title = "Balta Store", Version = "v1"});
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +42,11 @@ namespace BaltaStore.Api
             app.UseMvc();
             
             app.UseResponseCompression();
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Balta Store - V1");
+            });
         }
     }
 }

@@ -3,7 +3,6 @@ C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaS
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Api.runtimeconfig.dev.json
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Api.dll
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Api.pdb
-C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.csprojResolveAssemblyReference.cache
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.csproj.CoreCompileInputs.cache
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.AssemblyInfoInputs.cache
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.AssemblyInfo.cs
@@ -25,3 +24,10 @@ C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Domain.pdb
 C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Shared.pdb
 C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Infra.dll
 C:\dev\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Infra.pdb
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Domain.dll
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Infra.dll
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Shared.dll
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Domain.pdb
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Infra.pdb
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Api\bin\Debug\netcoreapp2.0\BaltaStore.Shared.pdb
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Api\obj\Debug\netcoreapp2.0\BaltaStore.Api.csproj.CopyComplete

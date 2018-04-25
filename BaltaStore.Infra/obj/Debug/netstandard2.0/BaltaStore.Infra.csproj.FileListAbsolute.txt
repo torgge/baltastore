@@ -1,7 +1,6 @@
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Infra.deps.json
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Infra.dll
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Infra.pdb
-C:\Users\torgg\projetos\BaltaStore\BaltaStore.Infra\obj\Debug\netstandard2.0\BaltaStore.Infra.csprojResolveAssemblyReference.cache
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Infra\obj\Debug\netstandard2.0\BaltaStore.Infra.csproj.CoreCompileInputs.cache
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Infra\obj\Debug\netstandard2.0\BaltaStore.Infra.AssemblyInfoInputs.cache
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Infra\obj\Debug\netstandard2.0\BaltaStore.Infra.AssemblyInfo.cs
@@ -19,3 +18,8 @@ C:\dev\baltastore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Shared.dl
 C:\dev\baltastore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Shared.pdb
 C:\dev\baltastore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Domain.dll
 C:\dev\baltastore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Domain.pdb
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Domain.dll
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Shared.dll
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Domain.pdb
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Infra\bin\Debug\netstandard2.0\BaltaStore.Shared.pdb
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Infra\obj\Debug\netstandard2.0\BaltaStore.Infra.csproj.CopyComplete

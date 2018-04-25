@@ -6,7 +6,6 @@ C:\Users\torgg\projetos\BaltaStore\BaltaStore.Tests\bin\Debug\netcoreapp2.0\Balt
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Tests\bin\Debug\netcoreapp2.0\BaltaStore.Tests.runtimeconfig.dev.json
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Tests\bin\Debug\netcoreapp2.0\BaltaStore.Tests.dll
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Tests\bin\Debug\netcoreapp2.0\BaltaStore.Tests.pdb
-C:\Users\torgg\projetos\BaltaStore\BaltaStore.Tests\obj\Debug\netcoreapp2.0\BaltaStore.Tests.csprojResolveAssemblyReference.cache
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Tests\obj\Debug\netcoreapp2.0\BaltaStore.Tests.csproj.CoreCompileInputs.cache
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Tests\obj\Debug\netcoreapp2.0\BaltaStore.Tests.AssemblyInfoInputs.cache
 C:\Users\torgg\projetos\BaltaStore\BaltaStore.Tests\obj\Debug\netcoreapp2.0\BaltaStore.Tests.AssemblyInfo.cs
@@ -32,3 +31,5 @@ C:\dev\baltastore\BaltaStore.Tests\obj\Debug\netcoreapp2.0\BaltaStore.Tests.dll
 C:\dev\baltastore\BaltaStore.Tests\obj\Debug\netcoreapp2.0\BaltaStore.Tests.pdb
 C:\dev\baltastore\BaltaStore.Tests\bin\Debug\netcoreapp2.0\BaltaStore.Shared.dll
 C:\dev\baltastore\BaltaStore.Tests\bin\Debug\netcoreapp2.0\BaltaStore.Shared.pdb
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Tests\bin\Debug\netcoreapp2.0\BaltaStore.Shared.dll
+C:\Users\torgg\Projetos\baltastore\BaltaStore.Tests\bin\Debug\netcoreapp2.0\BaltaStore.Shared.pdb

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\dev\\baltastore\\BaltaStore.Api\\BaltaStore.Api.csproj",
+    "projectUniqueName": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Api\\BaltaStore.Api.csproj",
     "projectName": "BaltaStore.Api",
-    "projectPath": "C:\\dev\\baltastore\\BaltaStore.Api\\BaltaStore.Api.csproj",
-    "outputPath": "C:\\dev\\baltastore\\BaltaStore.Api\\obj\\",
+    "projectPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Api\\BaltaStore.Api.csproj",
+    "outputPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Api\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -15,11 +15,11 @@
     "frameworks": {
       "netcoreapp2.0": {
         "projectReferences": {
-          "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj": {
-            "projectPath": "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj"
+          "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj": {
+            "projectPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj"
           },
-          "C:\\dev\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj": {
-            "projectPath": "C:\\dev\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj"
+          "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj": {
+            "projectPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Infra\\BaltaStore.Infra.csproj"
           }
         }
       }
@@ -54,6 +54,10 @@
           "target": "Package",
           "version": "[2.0.0, )",
           "autoReferenced": true
+        },
+        "Swashbuckle.AspNetCore": {
+          "target": "Package",
+          "version": "[2.4.0, )"
         }
       },
       "imports": [

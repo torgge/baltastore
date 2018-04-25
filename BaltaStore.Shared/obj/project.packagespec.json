@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\dev\\baltastore\\BaltaStore.Shared\\BaltaStore.Shared.csproj",
+    "projectUniqueName": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Shared\\BaltaStore.Shared.csproj",
     "projectName": "BaltaStore.Shared",
-    "projectPath": "C:\\dev\\baltastore\\BaltaStore.Shared\\BaltaStore.Shared.csproj",
-    "outputPath": "C:\\dev\\baltastore\\BaltaStore.Shared\\obj\\",
+    "projectPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Shared\\BaltaStore.Shared.csproj",
+    "outputPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Shared\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -26,6 +26,10 @@
   "frameworks": {
     "netstandard2.0": {
       "dependencies": {
+        "FluentValidator": {
+          "target": "Package",
+          "version": "[2.0.2, )"
+        },
         "NETStandard.Library": {
           "suppressParent": "All",
           "target": "Package",

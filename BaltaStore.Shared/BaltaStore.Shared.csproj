@@ -1,13 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-    </PropertyGroup>
-    <ItemGroup>
-        <Compile Remove="Class1.cs"/>
-    </ItemGroup>
-    <ItemGroup>
-        <Reference Include="FluentValidator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null">
-            <HintPath>..\..\..\Users\User\.nuget\packages\fluentvalidator\2.0.2\lib\netstandard1.3\FluentValidator.dll</HintPath>
-        </Reference>
-    </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Users\User\.nuget\packages\fluentvalidator\2.0.2\lib\netstandard1.3\FluentValidator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidator" Version="2.0.2" />
+  </ItemGroup>
 </Project>

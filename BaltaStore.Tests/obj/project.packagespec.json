@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\dev\\baltastore\\BaltaStore.Tests\\BaltaStore.Tests.csproj",
+    "projectUniqueName": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Tests\\BaltaStore.Tests.csproj",
     "projectName": "BaltaStore.Tests",
-    "projectPath": "C:\\dev\\baltastore\\BaltaStore.Tests\\BaltaStore.Tests.csproj",
-    "outputPath": "C:\\dev\\baltastore\\BaltaStore.Tests\\obj\\",
+    "projectPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Tests\\BaltaStore.Tests.csproj",
+    "outputPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Tests\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -15,8 +15,8 @@
     "frameworks": {
       "netcoreapp2.0": {
         "projectReferences": {
-          "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj": {
-            "projectPath": "C:\\dev\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj"
+          "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj": {
+            "projectPath": "C:\\Users\\torgg\\Projetos\\baltastore\\BaltaStore.Domain\\BaltaStore.Domain.csproj"
           }
         }
       }
